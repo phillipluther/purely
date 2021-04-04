@@ -1,0 +1,32 @@
+{
+  "name": "purely",
+  "version": "0.1.0",
+  "description": "... tbd ...",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillipluther/purely.git"
+  },
+  "workspaces": [
+    "./packages/*",
+    "./apps/*"
+  ],
+  "author": "Phillip Luther <dev@phillipluther.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phillipluther/purely/issues"
+  },
+  "homepage": "https://github.com/phillipluther/purely#readme",
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "dependencies": {
+    "typescript": "^4.2.3"
+  }
+}
