@@ -20,6 +20,11 @@ describe('routes/posts', () => {
     expect(response.status).toEqual(405);
   });
 
+  test('PATCH is not allowed', async () => {
+    const response = await request(server).patch('/posts');
+    expect(response.status).toEqual(405);
+  });
+
   test('DELETE is not allowed', async () => {
     const response = await request(server).post('/posts');
     expect(response.status).toEqual(405);
