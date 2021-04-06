@@ -1,11 +1,15 @@
-import { IsString, Length } from 'class-validator';
+import { IsString, IsArray } from 'class-validator';
+
+// TODO: playing around with this lib for validating responses, starting simple.
+// make this more robust or scrap it altogether
 
 export class EditPost {
   @IsString()
-  @Length(1) // min of 1, no max
   title!: string;
 
   @IsString()
   description!: string;
-}
 
+  @IsArray({ each: true })
+  tags!: string[];
+}

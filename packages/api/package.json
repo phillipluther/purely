@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "class-validator": "^0.13.1",
+    "fs-extra": "^9.1.0",
     "koa": "^2.13.1",
     "koa-bodyparser": "^4.3.0",
     "koa-logger": "^3.2.1",

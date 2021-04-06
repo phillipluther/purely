@@ -16,9 +16,11 @@ describe('request/EditPost', () => {
   test('has known/expected properties', async () => {
     editPost.title = 'My New Post';
     editPost.description = 'A new post';
+    editPost.tags = ['tag1', 'tag2', 'tag3'];
 
     expect(editPost.title).toBeDefined();
     expect(editPost.description).toBeDefined();
+    expect(editPost.tags).toBeDefined();
   });
 
   describe('`title` validation', () => {
